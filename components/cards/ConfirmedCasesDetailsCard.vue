@@ -3,7 +3,7 @@
     <svg-card
       :title="$t('検査陽性者の状況')"
       :title-id="'details-of-confirmed-cases'"
-      :date="Data.inspections_summary.date"
+      :date="Data.patients_summary.date"
     >
       <confirmed-cases-table
         :aria-label="$t('検査陽性者の状況')"
