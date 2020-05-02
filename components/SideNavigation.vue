@@ -180,15 +180,14 @@ export default Vue.extend({
         },
         {
           title: this.$t('栃木県公式ホームページ'),
-          link: this.localePath('http://www.pref.tochigi.lg.jp/index.html')
+          link: 'http://www.pref.tochigi.lg.jp/index.html'
         },
         {
           title: this.$t(
             '栃木県における新型コロナウイルス感染症の発生状況および検査状況について'
           ),
-          link: this.localePath(
+          link:
             'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
-          )
         },
         {
           title: this.$t('栃木県 [非公式] 新型コロナ感染症対策サイト'),
