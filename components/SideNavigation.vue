@@ -183,6 +183,14 @@ export default Vue.extend({
           link: this.localePath('http://www.pref.tochigi.lg.jp/index.html')
         },
         {
+          title: this.$t(
+            '栃木県における新型コロナウイルス感染症の発生状況および検査状況について'
+          ),
+          link: this.localePath(
+            'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
+          )
+        },
+        {
           title: this.$t('栃木県 [非公式] 新型コロナ感染症対策サイト'),
           link: 'https://covid19-tochigi.netlify.app/',
           divider: true
