@@ -153,24 +153,38 @@ export default Vue.extend({
         },
          */
         {
-          title: this.$t('栃木県新型コロナウイルス感染症に関する情報'),
-          link: 'http://www.pref.tochigi.lg.jp/c05/kouhou/korona.html'
+          title: this.$t('那須塩原市 新型コロナウイルス関連情報'),
+          link: 'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/7794.html'
         },
         {
-          title: this.$t('栃木県主催等 中止又は延期するイベント等'),
-          link: 'http://www.pref.tochigi.lg.jp/c05/kouhou/eventr2.html'
+          title: this.$t('那須塩原市 新型コロナウイルス感染症について'),
+          link: 'http://www.city.nasushiobara.lg.jp/16/7677.html'
         },
         {
-          title: this.$t('知事からのメッセージ'),
-          link: 'http://www.pref.tochigi.lg.jp/e04/20200402chijimessage.html'
+          title: this.$t('那須塩原市 イベント中止・延期情報'),
+          link:
+            'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/k03/7795.html'
+        },
+        {
+          title: this.$t('那須塩原市長から市民の皆様へのメッセージ (YouTube)'),
+          link: 'https://www.youtube.com/watch?v=TK9KGdgVG3I'
         },
         {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
         },
         {
+          title: this.$t('那須塩原市公式ホームページ'),
+          link: 'http://www.city.nasushiobara.lg.jp/',
+          divider: true
+        },
+        {
           title: this.$t('栃木県公式ホームページ'),
-          link: 'http://www.pref.tochigi.lg.jp/index.html',
+          link: this.localePath('http://www.pref.tochigi.lg.jp/index.html')
+        },
+        {
+          title: this.$t('栃木県 [非公式] 新型コロナ感染症対策サイト'),
+          link: 'https://covid19-tochigi.netlify.app/',
           divider: true
         }
       ]

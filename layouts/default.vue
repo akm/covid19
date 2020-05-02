@@ -93,24 +93,24 @@ export default Vue.extend({
           hid: 'description',
           name: 'description',
           content: this.$tc(
-            '当サイトは栃木県の新型コロナウイルス感染症 (COVID-19) に関する情報を提供するために、有志によって開設された非公式なサイトです。'
+            '当サイトは那須塩原市の新型コロナウイルス感染症 (COVID-19) に関する情報を提供するために、有志によって開設された非公式なサイトです。'
           )
         },
         {
           hid: 'og:site_name',
           name: 'og:site_name',
-          content: this.$tc('栃木県 新型コロナウイルス感染症対策サイト')
+          content: this.$tc('那須塩原市 新型コロナウイルス感染症対策サイト')
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content: this.$tc('栃木県 新型コロナウイルス感染症対策サイト')
+          content: this.$tc('那須塩原市 新型コロナウイルス感染症対策サイト')
         },
         {
           hid: 'og:description',
           name: 'og:description',
           content: this.$tc(
-            '当サイトは栃木県の新型コロナウイルス感染症 (COVID-19) に関する情報を提供するために、有志によって開設された非公式なサイトです。'
+            '当サイトは那須塩原市の新型コロナウイルス感染症 (COVID-19) に関する情報を提供するために、有志によって開設された非公式なサイトです。'
           )
         },
         /*
@@ -123,7 +123,7 @@ export default Vue.extend({
         {
           hid: 'apple-mobile-web-app-title',
           name: 'apple-mobile-web-app-title',
-          content: this.$tc('栃木県 新型コロナウイルス感染症対策サイト')
+          content: this.$tc('那須塩原市 新型コロナウイルス感染症対策サイト')
         }
         /*
         {
