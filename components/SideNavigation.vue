@@ -11,7 +11,7 @@
       <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
         <h1 class="SideNavigation-Heading">
           <div class="SideNavigation-Logo">
-            <img src="/tochigi_logo2.png" :alt="$t('栃木県')" />
+            <img src="/logo.jpg" :alt="$t('那須塩原市')" />
           </div>
           {{ $t('栃木県【非公式】') }}<br />
           {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
