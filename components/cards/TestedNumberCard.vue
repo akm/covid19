@@ -24,7 +24,7 @@ export default {
   },
   data() {
     // 検査実施日別状況
-    const inspectTochigi = [] // 栃木県内 (宇都宮市を除く)
+    const inspectTochigi = [] // 那須塩原市内
     Data.inspections_summary.data.forEach(d => inspectTochigi.push(d[1]))
 
     const inspecUtm = [] // 宇都宮市
@@ -32,10 +32,7 @@ export default {
 
     const inspectionsGraph = [inspectTochigi, inspecUtm]
 
-    const inspectionsItems = [
-      this.$t('栃木県内 (宇都宮市を除く)'),
-      this.$t('宇都宮市')
-    ]
+    const inspectionsItems = [this.$t('那須塩原市内'), this.$t('宇都宮市')]
 
     const inspectionsLabels = []
     Data.inspections_summary.data.forEach(d => {

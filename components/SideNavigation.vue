@@ -13,7 +13,7 @@
           <div class="SideNavigation-Logo">
             <img src="/logo.jpg" :alt="$t('那須塩原市')" />
           </div>
-          {{ $t('栃木県【非公式】') }}<br />
+          {{ $t('栃木県那須塩原市【非公式】') }}<br />
           {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
         </h1>
       </nuxt-link>
@@ -125,7 +125,7 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('栃木県内の最新感染動向'),
+          title: this.$t('那須塩原市内の最新感染動向'),
           link: this.localePath('/')
         },
         /*
