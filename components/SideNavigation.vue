@@ -125,59 +125,62 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('那須塩原市内の最新感染動向'),
-          link: this.localePath('/')
-        },
-        /*
-        {
-          icon: 'covid',
-          title: this.$t('新型コロナウイルス感染症が心配なときに'),
-          link: this.localePath('/flow'),
+          title: this.$t('栃木県県北地域の最新感染動向'),
+          link: this.localePath('/'),
           divider: true
         },
-        {
-          icon: 'parent',
-          title: this.$t('お子様をお持ちの皆様へ'),
-          link: this.localePath('/parent')
-        },
-        {
-          icon: 'mdi-account-multiple',
-          title: this.$t('都民の皆様へ'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
-        },
-        {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: this.localePath('/worker'),
-          divider: true
-        },
-         */
-        {
-          title: this.$t('那須塩原市 新型コロナウイルス関連情報'),
-          link: 'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/7794.html'
-        },
-        {
-          title: this.$t('那須塩原市 新型コロナウイルス感染症について'),
-          link: 'http://www.city.nasushiobara.lg.jp/16/7677.html'
-        },
-        {
-          title: this.$t('那須塩原市 イベント中止・延期情報'),
-          link:
-            'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/k03/7795.html'
-        },
-        {
-          title: this.$t('那須塩原市長から市民の皆様へのメッセージ (YouTube)'),
-          link: 'https://www.youtube.com/watch?v=TK9KGdgVG3I'
-        },
-        {
-          title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
-        },
+
         {
           title: this.$t('那須塩原市公式ホームページ'),
-          link: 'http://www.city.nasushiobara.lg.jp/',
+          link: 'http://www.city.nasushiobara.lg.jp/'
+        },
+        {
+          title: this.$t('那須塩原市 市内での患者発生状況'),
+          link: 'http://www.city.nasushiobara.lg.jp/16/8035.html'
+        },
+        {
+          title: this.$t('那須塩原市 新型コロナウイルス関連情報'),
+          link: 'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/7794.html',
           divider: true
         },
+
+        {
+          title: this.$t('大田原市 公式ホームページ'),
+          link: 'https://www.city.ohtawara.tochigi.jp/'
+        },
+        {
+          title: this.$t(
+            '大田原市における新型コロナウイルス感染症患者の発生状況'
+          ),
+          link: 'https://www.city.ohtawara.tochigi.jp/docs/2020042700032/'
+        },
+        {
+          title: this.$t('大田原市 新型コロナウイルス感染症関連情報'),
+          link:
+            'https://www.city.ohtawara.tochigi.jp/category/zokusei/covid19/',
+          divider: true
+        },
+
+        {
+          title: this.$t('那須町 公式ホームページ'),
+          link: 'https://www.town.nasu.lg.jp/'
+        },
+        {
+          title: this.$t('那須町  新型コロナウイルス関連情報'),
+          link: 'https://www.town.nasu.lg.jp/0122/info-0000001710-1.html',
+          divider: true
+        },
+
+        {
+          title: this.$t('矢板市 公式ホームページ'),
+          link: 'https://www.city.yaita.tochigi.jp/'
+        },
+        {
+          title: this.$t('矢板市 新型コロナウイルスに関する情報'),
+          link: 'https://www.city.yaita.tochigi.jp/site/coronavirus/',
+          divider: true
+        },
+
         {
           title: this.$t('栃木県公式ホームページ'),
           link: 'http://www.pref.tochigi.lg.jp/index.html'
@@ -192,6 +195,12 @@ export default Vue.extend({
         {
           title: this.$t('栃木県 [非公式] 新型コロナ感染症対策サイト'),
           link: 'https://covid19-tochigi.netlify.app/',
+          divider: true
+        },
+
+        {
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about'),
           divider: true
         }
       ]

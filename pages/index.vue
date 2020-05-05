@@ -78,7 +78,7 @@ export default Vue.extend({
       // dischargesGraph,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: this.$t('那須塩原市内の最新感染動向'),
+        title: this.$t('栃木県県北地域の最新感染動向'),
         date: Data.lastUpdate
       },
       newsItems: News.newsItems
@@ -87,7 +87,7 @@ export default Vue.extend({
   },
   head(): MetaInfo {
     return {
-      title: this.$t('那須塩原市内の最新感染動向') as string
+      title: this.$t('栃木県県北地域の最新感染動向') as string
     }
   }
 })
