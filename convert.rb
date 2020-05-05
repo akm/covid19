@@ -35,7 +35,7 @@ end
 
 filepath = ARGV[0]
 updated = Time.parse(ARGV[1])
-residence = '那須塩原市'
+residences = %w[那須町 那須塩原市 大田原市 矢板市]
 
 def parse_date(s)
   return nil if s.nil? || s.empty?
@@ -87,7 +87,7 @@ patients = []
 # https://docs.ruby-lang.org/ja/2.5.0/class/CSV.html#S_OPEN
 CSV.open(filepath, headers: true) do |csv|
   csv.each do |row|
-    if row['居住地'] == residence
+    if residences.include?(row['居住地'])
       patients << Patient.new(row)
     end
   end
