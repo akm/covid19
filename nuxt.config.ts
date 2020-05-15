@@ -13,7 +13,8 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 【非公式】栃木県 新型コロナウイルス感染症対策サイト',
+    titleTemplate:
+      '%s | 【非公式】栃木県県北地域 新型コロナウイルス感染症対策サイト',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,35 +22,35 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://covid19-tochigi.netlify.com/'
+        content: 'https://covid19.tecowl.co.jp/'
       }
       /*
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        hid: 'twitter:site',
-        name: 'twitter:site',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'twitter:creator',
-        name: 'twitter:creator',
-        content: '@tokyo_bousai'
-      },
-      {
-        hid: 'fb:app_id',
-        property: 'fb:app_id',
-        content: '2879625188795443'
-      },
-      {
-        hid: 'note:card',
-        property: 'note:card',
-        content: 'summary_large_image'
-      }
-      */
+            {
+              hid: 'twitter:card',
+              name: 'twitter:card',
+              content: 'summary_large_image'
+            },
+            {
+              hid: 'twitter:site',
+              name: 'twitter:site',
+              content: '@tokyo_bousai'
+            },
+            {
+              hid: 'twitter:creator',
+              name: 'twitter:creator',
+              content: '@tokyo_bousai'
+            },
+            {
+              hid: 'fb:app_id',
+              property: 'fb:app_id',
+              content: '2879625188795443'
+            },
+            {
+              hid: 'note:card',
+              property: 'note:card',
+              content: 'summary_large_image'
+            }
+            */
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

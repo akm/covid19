@@ -11,9 +11,9 @@
       <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
         <h1 class="SideNavigation-Heading">
           <div class="SideNavigation-Logo">
-            <img src="/tochigi_logo2.png" :alt="$t('栃木県')" />
+            <img src="/logo.jpg" :alt="$t('那須塩原市')" />
           </div>
-          {{ $t('栃木県【非公式】') }}<br />
+          {{ $t('栃木県那須塩原市【非公式】') }}<br />
           {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
         </h1>
       </nuxt-link>
@@ -125,52 +125,82 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('栃木県内の最新感染動向'),
-          link: this.localePath('/')
-        },
-        /*
-        {
-          icon: 'covid',
-          title: this.$t('新型コロナウイルス感染症が心配なときに'),
-          link: this.localePath('/flow'),
+          title: this.$t('栃木県県北地域の最新感染動向'),
+          link: this.localePath('/'),
           divider: true
         },
+
         {
-          icon: 'parent',
-          title: this.$t('お子様をお持ちの皆様へ'),
-          link: this.localePath('/parent')
+          title: this.$t('那須塩原市公式ホームページ'),
+          link: 'http://www.city.nasushiobara.lg.jp/'
         },
         {
-          icon: 'mdi-account-multiple',
-          title: this.$t('都民の皆様へ'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
+          title: this.$t('那須塩原市 市内での患者発生状況'),
+          link: 'http://www.city.nasushiobara.lg.jp/16/8035.html'
         },
         {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: this.localePath('/worker'),
+          title: this.$t('那須塩原市 新型コロナウイルス関連情報'),
+          link: 'http://www.city.nasushiobara.lg.jp/kenkofukushi/d01/7794.html',
           divider: true
         },
-         */
+
         {
-          title: this.$t('栃木県新型コロナウイルス感染症に関する情報'),
-          link: 'http://www.pref.tochigi.lg.jp/c05/kouhou/korona.html'
+          title: this.$t('大田原市 公式ホームページ'),
+          link: 'https://www.city.ohtawara.tochigi.jp/'
         },
         {
-          title: this.$t('栃木県主催等 中止又は延期するイベント等'),
-          link: 'http://www.pref.tochigi.lg.jp/c05/kouhou/eventr2.html'
+          title: this.$t(
+            '大田原市における新型コロナウイルス感染症患者の発生状況'
+          ),
+          link: 'https://www.city.ohtawara.tochigi.jp/docs/2020042700032/'
         },
         {
-          title: this.$t('知事からのメッセージ'),
-          link: 'http://www.pref.tochigi.lg.jp/e04/20200402chijimessage.html'
+          title: this.$t('大田原市 新型コロナウイルス感染症関連情報'),
+          link:
+            'https://www.city.ohtawara.tochigi.jp/category/zokusei/covid19/',
+          divider: true
+        },
+
+        {
+          title: this.$t('那須町 公式ホームページ'),
+          link: 'https://www.town.nasu.lg.jp/'
         },
         {
-          title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
+          title: this.$t('那須町  新型コロナウイルス関連情報'),
+          link: 'https://www.town.nasu.lg.jp/0122/info-0000001710-1.html',
+          divider: true
         },
+
+        {
+          title: this.$t('矢板市 公式ホームページ'),
+          link: 'https://www.city.yaita.tochigi.jp/'
+        },
+        {
+          title: this.$t('矢板市 新型コロナウイルスに関する情報'),
+          link: 'https://www.city.yaita.tochigi.jp/site/coronavirus/',
+          divider: true
+        },
+
         {
           title: this.$t('栃木県公式ホームページ'),
-          link: 'http://www.pref.tochigi.lg.jp/index.html',
+          link: 'http://www.pref.tochigi.lg.jp/index.html'
+        },
+        {
+          title: this.$t(
+            '栃木県における新型コロナウイルス感染症の発生状況および検査状況について'
+          ),
+          link:
+            'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
+        },
+        {
+          title: this.$t('栃木県 [非公式] 新型コロナ感染症対策サイト'),
+          link: 'https://covid19-tochigi.netlify.app/',
+          divider: true
+        },
+
+        {
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about'),
           divider: true
         }
       ]

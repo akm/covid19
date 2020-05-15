@@ -24,23 +24,17 @@ export default {
   },
   data() {
     // 検査実施日別状況
-    let inspec_tochigi = [] // 栃木県内 (宇都宮市を除く)
-    Data.inspections_summary.data.forEach(d => inspec_tochigi.push(d[1]))
+    const inspectTochigi = [] // 那須塩原市内
+    Data.inspections_summary.data.forEach(d => inspectTochigi.push(d[1]))
 
-    let inspec_utm = [] // 宇都宮市
-    Data.inspections_summary.data.forEach(d => inspec_utm.push(d[2]))
+    const inspecUtm = [] // 宇都宮市
+    Data.inspections_summary.data.forEach(d => inspecUtm.push(d[2]))
 
-    const inspectionsGraph = [
-      inspec_tochigi,
-      inspec_utm
-    ]
+    const inspectionsGraph = [inspectTochigi, inspecUtm]
 
-    const inspectionsItems = [
-      this.$t('栃木県内 (宇都宮市を除く)'),
-      this.$t('宇都宮市')
-    ]
+    const inspectionsItems = [this.$t('那須塩原市内'), this.$t('宇都宮市')]
 
-    let inspectionsLabels = []
+    const inspectionsLabels = []
     Data.inspections_summary.data.forEach(d => {
       const date = new Date(d[0])
       inspectionsLabels.push(`${date.getMonth() + 1}/${date.getDate()}`)
