@@ -58,7 +58,7 @@ class Patient
     # @num = row['番号']
     @residence, @generation, @gender = row['居住地'], row['年代'], row['性別']
     @released_on = parse_date(row['陽性判明日'])
-    @recovered_on = parse_date(row['退院日'])
+    @recovered_on = parse_date(row['退院･退所日'])
     @memo = row['備考']
   end
 
