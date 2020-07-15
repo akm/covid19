@@ -172,16 +172,6 @@ export default Vue.extend({
         },
 
         {
-          title: this.$t('矢板市 公式ホームページ'),
-          link: 'https://www.city.yaita.tochigi.jp/'
-        },
-        {
-          title: this.$t('矢板市 新型コロナウイルスに関する情報'),
-          link: 'https://www.city.yaita.tochigi.jp/site/coronavirus/',
-          divider: true
-        },
-
-        {
           title: this.$t('栃木県公式ホームページ'),
           link: 'http://www.pref.tochigi.lg.jp/index.html'
         },
