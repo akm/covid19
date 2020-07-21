@@ -35,7 +35,7 @@ end
 
 filepath = ARGV[0]
 updated = Time.parse(ARGV[1])
-residences = %w[那須町 那須塩原市 大田原市 矢板市]
+residences = %w[那須町 那須塩原市 大田原市]
 
 def parse_date(s)
   return nil if s.nil? || s.empty?
